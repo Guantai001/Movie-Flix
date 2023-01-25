@@ -19,7 +19,22 @@ function Comments() {
       <Search />
       <div className="container pt-5">
     <h3>Comments Page</h3>
-     </div>
+    <div className="container mx-auto text-center row p-1 ">
+            <table className="table table-striped table-hover table-bordered col-12">
+                <thead>
+                    <tr>
+                       
+                        <th scope="col">Movie Title</th>
+                        <th scope="col">Comments</th>
+                        <th scope="col">Rating</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
     </div>
   )
 }
