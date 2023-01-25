@@ -8,6 +8,19 @@ function Card(){
 
 
     
+  const inputEmailHandler = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const inputCommentHandler = (e) => {
+    setComment(e.target.value);
+  };
+
+  const inputRateHandler = (e) => {
+    setRate(e.target.value);
+  
+  };
+
     return(
         <div>
             <h1>Card</h1>
