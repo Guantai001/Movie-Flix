@@ -52,11 +52,21 @@ function Card(){
 
   };
 
+  const [visibility, setVisibility] = useState(false);
+
+  const popupCloseHandler = () => {
+    setVisibility(false);
+  };
+
+
+  const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
+ 
+
 
     return(
-        <div>
-            <h1>Card</h1>
-        </div>
+      <>
+      
+      </>
     )
 }
 
