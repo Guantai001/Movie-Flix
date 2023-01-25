@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{useState} from "react";
 
 function Comments() {
+  const [getComments, setComments] = useState([]);
+
   return (
     <div>Comments</div>
   )
