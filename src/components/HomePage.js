@@ -14,6 +14,14 @@ import React, { useEffect, useState } from "react";
         });
         
     }, []);
+    function handleSearch(searches) {
+      setMovies([...searches]);
+    }
+  
+    function handleFilter(event) {
+      const filterMovie = movies.filter(movie => movie.original_title === event.target.value)
+      setMovies(filterMovie)
+      }
   return (
     <div>HomePage</div>
   )
