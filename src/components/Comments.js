@@ -31,6 +31,18 @@ function Comments() {
                     </tr>
                 </thead>
                 <tbody>
+
+                    {getComments.map((comment) => (
+                        <tr key={comment.id}>
+                            <td>{comment.movie}</td>
+                            <td>{comment.comment}</td>
+                            <td>{comment.rate}</td>
+                            <td><button 
+                            className="btn btn-danger">Delete</button></td>
+                        </tr>
+                    ))}
+
+
                 </tbody>
             </table>
         </div>
