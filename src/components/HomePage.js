@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import MovieList from "./MovieList";
+import Search from "./Search";
+
 
   function HomePage() {
     const [movies, setMovies] = useState([]);
@@ -23,8 +26,12 @@ import React, { useEffect, useState } from "react";
       setMovies(filterMovie)
       }
   return (
-    <div>HomePage</div>
-  )
+    <div>
+    <Search handleSearch={handleSearch} handleFilter= {handleFilter}/>
+    <MovieList movies={movies} setMovies={setMovies} />
+  </div>
+);
 }
+
 
 export default HomePage
