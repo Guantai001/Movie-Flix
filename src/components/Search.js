@@ -19,7 +19,7 @@ import React from 'react'
       }
     }
   return (
-    <div>Search</div>
+    <NavBar handleOnSubmit={handleOnSubmit} handleFilter={handleFilter}/>
   )
 }
 
