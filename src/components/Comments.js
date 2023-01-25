@@ -1,4 +1,6 @@
 import React,{useState, useEffect} from "react";
+import Search from "./Search";
+
 
 function Comments() {
   const [getComments, setComments] = useState([]);
@@ -13,7 +15,9 @@ function Comments() {
 }, []);
 
   return (
-    <div>Comments</div>
+    <div>
+      <Search />
+    </div>
   )
 }
 
