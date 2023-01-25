@@ -17,6 +17,9 @@ function Comments() {
   return (
     <div>
       <Search />
+      <div className="container pt-5">
+    <h3>Comments Page</h3>
+     </div>
     </div>
   )
 }
