@@ -14,6 +14,18 @@ function Comments() {
     });
 }, []);
 
+function handleDelete(id) {
+  fetch(`http://localhost:4001/movies/${id}`, {
+      method: "DELETE",
+  })
+  .then((res) => res.json())
+  .then((data) => {
+      console.log(data);
+      
+      setComments(getComments.filter((comment) => comment.id !== id));
+  });
+}
+
   return (
     <div>
       <Search />
@@ -38,6 +50,7 @@ function Comments() {
                             <td>{comment.comment}</td>
                             <td>{comment.rate}</td>
                             <td><button 
+                            onClick={() => handleDelete(comment.id)}
                             className="btn btn-danger">Delete</button></td>
                         </tr>
                     ))}
