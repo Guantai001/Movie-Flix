@@ -19,7 +19,9 @@ function Search({ handleSearch, handleFilter }) {
         });
     }
   }
-  return <NavBar handleOnSubmit={handleOnSubmit} handleFilter={handleFilter} />;
+  return(
+  <NavBar handleOnSubmit={handleOnSubmit} handleFilter={handleFilter} />
+  )
 }
 
 export default Search;
